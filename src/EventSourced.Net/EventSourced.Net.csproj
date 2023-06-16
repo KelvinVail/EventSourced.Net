@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	<TargetFramework>net7.0</TargetFramework>
+	<ImplicitUsings>enable</ImplicitUsings>
+	<Nullable>enable</Nullable>
+	<EnableNETAnalyzers>true</EnableNETAnalyzers>
+	<Authors>Kelvin Vail</Authors>
+	<Company>Kelvin Vail</Company>
+	<Product>EventSourced.Net</Product>
+	<Description>Abstract classes and interfaces for implementing Event Sourcing</Description>
+	<PackageProjectUrl>https://github.com/KelvinVail/EventSourced.Net</PackageProjectUrl>
+	<RepositoryUrl>https://github.com/KelvinVail/EventSourced.Net</RepositoryUrl>
+	<PackageTags>Event Sourcing</PackageTags>
+	<Version>0.0.0</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <AdditionalFiles Include="..\CodeMetricsConfig.txt" Link="CodeMetricsConfig.txt" />
+    <AdditionalFiles Include="..\StyleCop.json" Link="StyleCop.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+	<PackageReference Include="CSharpFunctionalExtensions" Version="2.39.2" />
+	<PackageReference Include="Microsoft.CodeAnalysis.Analyzers" Version="3.3.4">
+	  <PrivateAssets>all</PrivateAssets>
+	  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+	</PackageReference>
+	<PackageReference Include="SonarAnalyzer.CSharp" Version="9.3.0.71466">
+	  <PrivateAssets>all</PrivateAssets>
+	  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+	</PackageReference>
+	<PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
+	  <PrivateAssets>all</PrivateAssets>
+	  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+	</PackageReference>
+  </ItemGroup>
+
+</Project>
