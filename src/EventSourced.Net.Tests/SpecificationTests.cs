@@ -11,8 +11,16 @@ public class SpecificationTests : Specification<ProjectionStub>
     [Fact]
     public void TrueIfExpressionIsTrue()
     {
-        var projection = new ProjectionStub();
+        var projection = new ProjectionStub { Id = string.Empty };
 
         IsSatisfiedBy(projection).Should().BeTrue();
+    }
+
+    [Fact]
+    public void FalseIfExpressionIsFalse()
+    {
+        var projection = new ProjectionStub { Id = "Id" };
+
+        IsSatisfiedBy(projection).Should().BeFalse();
     }
 }
