@@ -1,4 +1,4 @@
-﻿namespace EventSourced.Net;
+﻿namespace EventSourced.Net.Domain;
 
 public interface IDomainEvent
 {

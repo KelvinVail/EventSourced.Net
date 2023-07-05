@@ -1,4 +1,6 @@
-﻿namespace EventSourced.Net.Tests.TestDoubles;
+﻿using EventSourced.Net.Persistence;
+
+namespace EventSourced.Net.Tests.TestDoubles;
 
 public class ProjectionStub : IProjection
 {

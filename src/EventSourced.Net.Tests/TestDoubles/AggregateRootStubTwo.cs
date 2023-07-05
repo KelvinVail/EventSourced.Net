@@ -1,12 +1,7 @@
-﻿namespace EventSourced.Net.Tests.TestDoubles;
+﻿using EventSourced.Net.Domain;
 
-public class AggregateRootStubTwo : IAggregateRoot<AggregateRootStubTwo>
+namespace EventSourced.Net.Tests.TestDoubles;
+
+public class AggregateRootStubTwo : AggregateRoot<AggregateRootStubTwo>
 {
-    private readonly List<DomainEvent<AggregateRootStubTwo>> _events = new ();
-
-    public string AggregateId { get; } = "id";
-
-    public IReadOnlyList<DomainEvent<AggregateRootStubTwo>> Events => _events;
-
-    public void ClearEvents() => _events.Clear();
 }

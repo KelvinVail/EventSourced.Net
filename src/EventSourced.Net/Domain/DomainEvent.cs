@@ -1,7 +1,7 @@
-﻿namespace EventSourced.Net;
+﻿namespace EventSourced.Net.Domain;
 
 public abstract class DomainEvent<T> : IDomainEvent
-    where T : class, IAggregateRoot<T>
+    where T : AggregateRoot<T>
 {
     protected DomainEvent()
     {
@@ -34,5 +34,5 @@ public abstract class DomainEvent<T> : IDomainEvent
 
     public string CreatedBy { get; set; } = string.Empty;
 
-    public abstract T Play(Maybe<T> root);
+    public abstract T Apply(Maybe<T> root = default);
 }

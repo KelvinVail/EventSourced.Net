@@ -1,6 +1,7 @@
 ﻿using System.Linq.Expressions;
+using EventSourced.Net.Persistence;
 
-namespace EventSourced.Net;
+namespace EventSourced.Net.Domain;
 
 public abstract class Specification<T>
     where T : IProjection

@@ -1,4 +1,5 @@
 ﻿using CSharpFunctionalExtensions;
+using EventSourced.Net.Domain;
 
 namespace EventSourced.Net.Tests.TestDoubles;
 
@@ -13,5 +14,5 @@ public class AggTwoDomainEvent : DomainEvent<AggregateRootStubTwo>
     {
     }
 
-    public override AggregateRootStubTwo Play(Maybe<AggregateRootStubTwo> root) => throw new NotImplementedException();
+    public override AggregateRootStubTwo Apply(Maybe<AggregateRootStubTwo> root) => throw new NotImplementedException();
 }

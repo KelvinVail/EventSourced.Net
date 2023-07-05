@@ -1,4 +1,5 @@
 ﻿using System.Linq.Expressions;
+using EventSourced.Net.Domain;
 using EventSourced.Net.Tests.TestDoubles;
 
 namespace EventSourced.Net.Tests;
